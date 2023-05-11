@@ -9,7 +9,7 @@ const endWith = require( 'licia/endWith' );
 const WebSocketServer = require( './lib/WebSocketServer' );
 
 async function start ( {
-    port = 80,
+    port = 3001,
     host,
     domain,
     server,
@@ -21,6 +21,7 @@ async function start ( {
 } = {} )
 {
     domain = domain || 'localhost:' + port;
+    domain = "https://remote-debugging.onrender.com/"
     if ( !endWith( basePath, '/' ) )
     {
         basePath += '/';
