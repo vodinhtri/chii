@@ -11,7 +11,7 @@ const WebSocketServer = require( './lib/WebSocketServer' );
 async function start ( {
     port = 3001,
     host,
-    domain,
+    domain = "https://remote-debugging.onrender.com",
     server,
     cdn,
     https: useHttps,
