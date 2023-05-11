@@ -21,7 +21,6 @@ async function start ( {
 } = {} )
 {
     domain = domain || 'localhost:' + port;
-    domain = "https://remote-debugging.onrender.com/"
     if ( !endWith( basePath, '/' ) )
     {
         basePath += '/';
